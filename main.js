@@ -29,25 +29,13 @@ function calculateTotalPrice(){
 
     }
 
+    let numeroCarrozza = Math.floor((Math.random() * 10) + 1);
 
+    let passengerName = (document.getElementById("passengerName").value)
 
-    // if(ageValue < 18){
-    //     totalPrice = (price - (price * u18DiscountPerc)).toFixed(2)
-
-    // } else if(ageValue > 65){
-    //     totalPrice = (price - (price * o65DiscountPerc)).toFixed(2)
-
-    // } else{
-    //     totalPrice = price
-
-    // }
 
     console.log("Total price:",totalPrice)
-}
+    console.log("Carrozza:",numeroCarrozza)
+    console.log("Passeggero:",passengerName)
 
-function testSelect(){
-    let ageSelected = (document.getElementById("testselect").value)
-    console.log(ageSelected)
-
-    
 }

@@ -11,28 +11,31 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
   <header>
   </header>
-  <main>
+  <main class="d-flex justify-content-center align-items-center p-5">
 
-    <form onsubmit="return false">
+    <div class="w-100 h-100 d-flex justify-content-center align-items-center bg-danger">
 
-        <input type="number" placeholder="Distance" id="distance">
-
-        <select id="ageSelect">
-            
-          <option value="under18">0-18</option>
-          <option value="19-64">19-64</option>
-          <option value="over65" selected="selected">65+</option>
-          
-        </select>
-
-        <button type="button" onclick="calculateTotalPrice();">Get Value</button>
-        
-    </form>
+      <div class="input-user left-top-part border border-1 border container w-75 p-5 text-center bg-white">
+          <form class="d-flex mb-5" onsubmit="return false">
+            <input class="form-control mx-2 border border-1 border-danger" type="text" placeholder="Name" id="passengerName">
+            <input class="form-control mx-2 border border-1 border-danger" type="number" placeholder="Distance" id="distance">
+            <select class="form-select mx-2 border border-1 border-danger" id="ageSelect"> 
+              <option value="under18">0-18</option>
+              <option value="19-64">19-64</option>
+              <option value="over65" selected="selected">65+</option>
+            </select>
+          </form>
+        <button class="btn btn-light mx-3 text-danger border border-2 border-warning" type="button" onclick="calculateTotalPrice();">Ticket preview</button>
+        <button class="btn btn-light mx-3 text-danger border border-1 border-danger" type="button">Annulla</button>
+      </div>
+    </div>
 
   </main>
   <footer>
